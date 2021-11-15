@@ -1,5 +1,6 @@
 package homework1;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,5 +23,10 @@ public class AutomationPractice extends BaseClass {
         String actualResult = driver.findElement(By.xpath("//p[contains(text(),'There is 1 error')]")).getText();
         Assert.assertEquals("You are on login page", expectedResult, actualResult);
 
+    }
+
+    @After
+    public void close(){
+        closeBrowser();
     }
 }
