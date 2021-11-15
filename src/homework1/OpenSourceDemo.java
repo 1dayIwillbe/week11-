@@ -31,7 +31,7 @@ public class OpenSourceDemo extends BaseClass {
 
     @After
     public void close() {
-
+    closeBrowser();
     }
 
 }
