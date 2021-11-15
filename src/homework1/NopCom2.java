@@ -1,6 +1,5 @@
-package homework2;
+package homework1;
 
-import homework1.BaseClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
