@@ -23,6 +23,9 @@ public class OpenSourceDemo extends BaseClass {
         Assert.assertEquals("You are not logedin ", atcualText, expectedText);
         driver.findElement(By.id("welcome")).click();
         driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
+        String expectedText1 ="LOGIN Panel";
+        String atcualText1= driver.findElement(By.id("logInPanelHeading")).getText();
+        System.out.println(atcualText1);
     }
 
 
