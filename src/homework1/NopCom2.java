@@ -9,9 +9,12 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.LocalDateTime;
 
-/**
- *
- */
+/**Navigate to website "https://demo.nopcommerce.com/"
+  *  Click on the register link.
+  *  Fill in all the fields.
+  *  Click on the register button.
+  *  Verify that the user registered successfully.
+* */
 
 
 public class NopCom2 extends BaseClass {

@@ -25,13 +25,13 @@ public class OpenSourceDemo extends BaseClass {
         driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
         String expectedText1 ="LOGIN Panel";
         String atcualText1= driver.findElement(By.id("logInPanelHeading")).getText();
-        System.out.println(atcualText1);
+        Assert.assertEquals("You are not logged out",expectedText1,atcualText1);
     }
 
 
     @After
     public void close() {
-    closeBrowser();
+    //closeBrowser();
     }
 
 }
