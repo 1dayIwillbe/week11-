@@ -1,5 +1,6 @@
 package homework1;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -47,6 +48,10 @@ public class NopCom2 extends BaseClass {
     String expectedResult = "Your registration completed";
     String actualResult = driver.findElement(By.xpath("//div[text()='Your registration completed']")).getText();
     Assert.assertEquals("You are not registered",expectedResult,actualResult);
+}
+@After
+    public void end(){
+    closeBrowser();
 }
 
 }

@@ -6,6 +6,15 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+/**
+ * Click on Sign In
+ * Enter correct Email in Email field
+ * Enter wrong Password in Password field
+ * Click on the Sign In button.
+ * Expected Result:
+ * Error Message “There is 1 error”
+ */
+
 public class AutomationPractice extends BaseClass {
     @Before
     public void page() {

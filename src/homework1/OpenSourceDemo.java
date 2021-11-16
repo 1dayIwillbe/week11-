@@ -6,6 +6,18 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
+/**
+ * https://opensource-demo.orangehrmlive.com/
+ * ( Username : Admin | Password : admin123 )
+ * Enter username
+ * Enter password
+ * Click login
+ * Verify that the text “Welcome Paul”
+ * After Paul one symbol there so click on the symbol for logout.
+ * Verify the below text.
+ * LOGIN Panel
+ */
+
 public class OpenSourceDemo extends BaseClass {
     @Before
     public void open() {
@@ -31,7 +43,7 @@ public class OpenSourceDemo extends BaseClass {
 
     @After
     public void close() {
-    //closeBrowser();
+    closeBrowser();
     }
 
 }
