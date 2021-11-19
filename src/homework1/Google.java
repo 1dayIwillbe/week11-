@@ -57,7 +57,7 @@ public class Google extends BaseClass {
         stop();
         start();
         driver.findElement(By.linkText("Digital downloads")).click();
-        String expectedResult3 = "Digital downloads ";
+        String expectedResult3 = "Digital downloads";
         WebElement five = driver.findElement(By.xpath("//h1[contains(text(),'Digital downloads')]"));
         String actuelResult3 = five.getText();
         Assert.assertEquals("You are not on Digital downloads Page", expectedResult3, actuelResult3);
