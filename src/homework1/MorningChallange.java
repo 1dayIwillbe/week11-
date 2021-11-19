@@ -18,7 +18,7 @@ public class MorningChallange extends BaseClass {
     @Test
     public void test1() {
 
-        driver.manage().window().fullscreen();
+       driver.manage().window().fullscreen();
         driver.findElement(By.xpath("//input[@id='sp-cc-accept']")).click();
         driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("Dell Laptop", Keys.ENTER);
         driver.manage().window().fullscreen();
@@ -28,7 +28,7 @@ public class MorningChallange extends BaseClass {
         int numberOfProducts = products.size();
         System.out.println("Total number of products found on page :"+numberOfProducts);
         for (WebElement pro : products){
-            System.out.println(pro.getAttribute("alt"));
+           System.out.println(pro.getAttribute("alt"));
         }
     }
 
